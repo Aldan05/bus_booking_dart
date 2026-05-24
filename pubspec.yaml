@@ -1,0 +1,52 @@
+name: bus_app
+description: An advanced bus tracking and booking application with voice support.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- Firebase (Perfectly Matching Versions) ---
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.7.0
+  cloud_firestore: ^5.5.0
+
+  # --- State Management ---
+  provider: ^6.1.1
+
+  # --- Maps and Location (Free OpenStreetMap) ---
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.0
+  geolocator: ^13.0.0
+
+  # --- UI and Ticket Features ---
+  qr_flutter: ^4.1.0
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.10+1
+
+  # --- Advanced Features (Voice Support) ---
+  flutter_tts: ^4.2.2
+  speech_to_text: ^7.0.0
+
+  # --- Utilities ---
+  intl: ^0.19.0
+  shared_preferences: ^2.3.2
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Asset Registration
+  assets:
+    - assets/images/bus.png
+    - assets/images/logo.png
+    - assets/images/map_marker.png
+    - assets/sounds/notification.mp3
